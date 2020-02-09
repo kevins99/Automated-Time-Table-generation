@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<!-- <form method="post" action="deleteRoom.jsp">
+		Room Number<br><input type="text" name="RoomNo"><br><br>
+		<input type="submit" value="Delete Class Room">
+	</form> -->
+	
+	<!-- ======== NAVBAR START ======== -->
+	
+	<style>
+	
+	.topnav {
+	  overflow: hidden;
+	  background-color: #333;
+	}
+	
+	.topnav a {
+	  float: left;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+	
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	
+	.topnav a.active {
+	  background-color: rgb(126, 51, 187);
+	  color: white;
+	}
+	</style>
+	
+	<div class="topnav">
+	  <a href="Admin.jsp">Admin Console</a>
+	  
+	  	<div style="position: absolute; right: 0px; padding: 3px;">
+		<form action="Logout">
+			<button type="submit" class="login100-form-btn">Log Out</button>
+		</form>
+	  	</div>
+	  
+	</div>
+	
+	<!-- ======== NAVBAR END ======== -->
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form method="post" action="deleteSubject.jsp" class="login100-form validate-form">
+				
+					<span class="login100-form-logo">
+						<img src="images/cross.jpg" height="80px">
+					</span>
+					<br><br>
+					<span class="login100-form-title p-b-34 p-t-27">
+						Delete Subject
+					</span>
+					<br>
+					<div class="wrap-input100 validate-input" >
+						<input  class="input100" type="text" pattern="[0-9]{3}" name="SubjectCode" placeholder="Subject Code">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							Delete Subject
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+</body>
+</html>

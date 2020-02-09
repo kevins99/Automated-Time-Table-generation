@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body style="overflow: hidden">
+
+	<!-- ======== NAVBAR START ======== -->
+	
+	<style>
+	
+	.topnav {
+	  overflow: hidden;
+	  background-color: #333;
+	}
+	
+	.topnav a {
+	  float: left;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+	
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	
+	.topnav a.active {
+	  background-color: rgb(126, 51, 187);
+	  color: white;
+	}
+	</style>
+	
+	<div class="topnav">
+	  <a href="Admin.jsp">Admin Console</a>
+	  
+	  	<div style="position: absolute; right: 0px; padding: 3px;">
+		<form action="Logout">
+			<button type="submit" class="login100-form-btn">Log Out</button>
+		</form>
+	  	</div>
+	  
+	</div>
+	
+	<!-- ======== NAVBAR END ======== -->
+
+	<!-- <form method="post" action="addSubject.jsp">
+		Subject Code<br><input type="text" name="subjectCode" required><br><br>
+		Subject Name<br><input type="text" name="subjectName" required><br><br>
+		Hours<br><input type="text" name="subjectHours" required><br><br>
+		Lab/ Lecture<br><br> 
+		<label><input type="radio" name="labLecture" value="1" required>Lab</label>
+		<label><input type="radio" name="labLecture" value="0">Classroom</label><br><br>
+		<input type="submit" value="Add Subject">
+	</form> -->
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form method="post" action="addSubject.jsp" class="login100-form validate-form">
+				
+					<!-- <span class="login100-form-logo">
+						<i class="zmdi zmdi-landscape"></i>
+					</span> -->
+
+					<span class="login100-form-title p-b-34 p-t-27">
+						Add Subject
+					</span>
+					<br>
+					<div class="wrap-input100 validate-input">
+						<input minlength="3" maxlength="3" class="input100" required pattern="[0-9]{3}" type="text" name="subjectCode" placeholder="Subject Code">
+						<span class="focus-input100"></span> 	
+					</div>
+
+					<div class="wrap-input100 validate-input">
+						<input class="input100" type="text" name="subjectName" required placeholder="Subject Name">
+						<span class="focus-input100""></span>
+					</div>
+					
+					<div class="wrap-input100 validate-input">
+						<input minlength="1" maxlength="2" class="input100" type="text" required pattern="[0-9]{1-2}" name="subjectHours" placeholder="Subject Hours">
+						<span class="focus-input100""></span>
+					</div>
+	
+					<center>
+					<font color="white">Lab/Lecture: </font>&nbsp; 
+					<input type="radio" name="labLecture" value="1" required><font color="white">&nbsp;Lab </font>&nbsp;
+					<input type="radio" name="labLecture" value="0"><font color="white">&nbsp;Classroom</font><br><br>
+					</center>
+					</p>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							Add Subject
+						</button>
+					</div>
+
+					<div class="text-center p-t-90">
+						<!-- <a class="txt1" href="#">
+							Forgot Password?
+						</a> -->
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>

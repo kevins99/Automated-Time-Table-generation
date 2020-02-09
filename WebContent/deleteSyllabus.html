@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+
+	<!-- ======== NAVBAR START ======== -->
+	
+	<style>
+	
+	.topnav {
+	  overflow: hidden;
+	  background-color: #333;
+	}
+	
+	.topnav a {
+	  float: left;
+	  color: #f2f2f2;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	  font-size: 17px;
+	}
+	
+	.topnav a:hover {
+	  background-color: #ddd;
+	  color: black;
+	}
+	
+	.topnav a.active {
+	  background-color: rgb(126, 51, 187);
+	  color: white;
+	}
+	</style>
+	
+	<div class="topnav">
+	  <a href="Admin.jsp">Admin Console</a>
+	  
+	  	<div style="position: absolute; right: 0px; padding: 3px;">
+		<form action="Logout">
+			<button type="submit" class="login100-form-btn">Log Out</button>
+		</form>
+	  	</div>
+	  
+	</div>
+	
+	<!-- ======== NAVBAR END ======== -->
+
+	<!-- Are you sure to delete the syllabus? <br><br>
+	<form method="post" action="deleteSyllabus.jsp">
+		<input type="submit" value="Yes">
+	</form>
+	<form method="post" action="Admin.jsp">
+		<input type="submit" value="No">
+	</form> -->
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('images/bg-01.jpg');">
+			<div class="wrap-login100">
+				<form method="post" action="deleteSyllabus.jsp" class="login100-form validate-form">
+				
+					<span class="login100-form-logo">
+						<img src="images/cross.jpg" height="80px">
+					</span>
+					<br><br>
+					<span class="login100-form-title p-b-34 p-t-27">
+						Are you sure to delete the syllabus?
+					</span>
+					<br>
+					
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							Yes
+						</button>
+					</div>
+
+				</form >
+				<br>
+				<form method="post" action="success.html">
+					<div class="container-login100-form-btn">
+						<button class="login100-form-btn" type="submit">
+							No
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
